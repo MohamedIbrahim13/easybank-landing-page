@@ -1,0 +1,90 @@
+@import "variables";
+@import "mixins";
+
+@include mQ(576px) {}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $fontSize;
+    font-family: $bodyFont;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h4,
+h4,
+h5,
+h6 {
+    color: $DarkBlue;
+}
+
+.hero {
+    clip-path: inset(0 -100vw -100vw -100vw);
+}
+
+.bg-color {
+    background-image: linear-gradient(to left bottom, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
+    color: $White;
+
+    &:hover {
+        color: $White;
+    }
+}
+
+
+#background {
+    top: -40%;
+    z-index: -99;
+}
+
+#mockups {
+    top: 75%;
+}
+
+#easybank .text-center {
+    width: 100%;
+
+    @include mQ(576px) {
+        width: 50%;
+    }
+}
+
+#articles {
+    a {
+        color: $DarkBlue;
+
+        &:hover {
+            color: $BrightCyan;
+        }
+    }
+}
+
+footer {
+
+    p,
+    a {
+
+        font-weight: 300;
+    }
+
+    background:$DarkBlue;
+
+    a {
+        color: $White;
+
+        &:hover {
+            color: $LimeGreen;
+        }
+    }
+
+    .copyright {
+        color: $GrayishBlue;
+    }
+}
